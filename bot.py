@@ -13,7 +13,7 @@ config_file = open("config.json")
 config = json.load(config_file)
 
 waiting = True
-timeout = 5
+timeout = (config["timeout"]/60)
 
 while waiting:
     # Get the timestamp
